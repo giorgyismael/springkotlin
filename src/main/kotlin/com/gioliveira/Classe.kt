@@ -1,8 +1,6 @@
 package com.gioliveira
 
-data class Person(val name: String, var age: Int, var car: Car){
-}
-
+data class Person(val name: String, var age: Int, var car: Car){}
 data class Car(var name:String, var yerarFactory:Int){}
 fun main(){
     var person: Person = Person("", 35, Car("mustang", 1968));
@@ -14,5 +12,4 @@ fun main(){
     person.car.yerarFactory=1890;
     println(person.car.name);
     println(person)
-
 }
